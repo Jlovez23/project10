@@ -1,11 +1,6 @@
 
-public class HasMenu{
-	public static main(String[] args);
-		menu();
+public interface HasMenu{
 
-	String menu(){
-		System.out.println("menu goes here");
-	}
-	void start(){
-	}
+	public String menu();
+	public void start();
 }// end class def
