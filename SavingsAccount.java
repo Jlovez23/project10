@@ -1,13 +1,18 @@
+import java.util.Scanner;
+
 class SavingsAccount extends CheckingAccount{
-    	double interestRate
-    
+    	double interestRate;
+
     	public static void main(String[] args){
-    	}
+    		SavingsAccount account = new SavingsAccount();
+		account.start();
+	}
 	void calcInterest(){
-		this.balance() += (this.getBalance * this.getInterestRate());
+		this.balance += (this.getBalance() * this.getInterestRate());
 	}
 	void setInterestRate(){
-		this.interestRate = interestRate
+		Scanner input = new Scanner(System.in);
+		this.interestRate = interestRate;
 	}
 	double getInterestRate(){
 		return this.interestRate;
